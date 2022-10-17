@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: headerFragment">
+</head>
+<body>
+<div id="container">
+<!--  <h1>-->
+<!--    Hello, <span th:text="${username}">&#45;&#45;name&#45;&#45;</span>.-->
+<!--  </h1>-->
+<!--  <h1>-->
+<!--    User ID By Token: <span th:text="${userIDByToken}">&#45;&#45;userID&#45;&#45;</span>.-->
+<!--  </h1>-->
+
+  <h3>Your Date of Birth is <span th:text="${user.getDob()}"/>.</h3>
+  <h3>Your Gmail is <span th:text="${user.getEmail()}"/>.</h3>
+  <h3>Your FirstName is <span th:text="${user.getFirstname()}"/>.</h3>
+  <h3>Your LastName is <span th:text="${user.getLastname()}"/>.</h3>
+
+</div>
+</body>
+</html>
